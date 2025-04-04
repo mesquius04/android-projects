@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="32dp"
+        tools:context=".MainActivity">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewMale"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/background_component_selected"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/viewFemale"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/imagebat"
+                    android:layout_marginBottom="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bat"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewFemale"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/background_component"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewMale"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:background="@drawable/imagecf"
+                    android:layout_height="60dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/cfg"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewHeight"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="@color/background_component"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCoofi">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fasegeneral"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:padding="12dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/llenguaextra"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:text="@string/catala"
+                            android:layout_weight="8"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white3" />
+                        <EditText
+                            android:id="@+id/EditText1"
+                            android:layout_width="0dp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:hint="@string/hintET"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:background="@color/background_component_selected"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:text="@string/castellà"
+                            android:layout_weight="8"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white3" />
+
+                        <EditText
+                            android:id="@+id/EditText2"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="2"
+                            android:hint="@string/hintET"
+                            android:background="@color/background_component_selected"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:text="@string/historia"
+                            android:layout_weight="8"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white3" />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:hint="@string/hintET"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:id="@+id/EditText3"
+                            android:background="@color/background_component_selected"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:text="@string/llenguaex"
+                            android:layout_weight="8"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white3" />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:hint="@string/hintET"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5"
+                            android:id="@+id/EditText4"
+                            android:background="@color/background_component_selected"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:text="@string/optativa"
+                            android:layout_weight="8"
+                            android:textSize="18sp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white3" />
+                        <EditText
+                            android:layout_width="0dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/hintET"
+                            android:maxLength="5"
+                            android:id="@+id/EditText5"
+                            android:background="@color/background_component_selected"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewCoofi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="@color/background_component"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewSele">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/altrallengua"/>
+                <CheckBox
+                    android:id="@+id/checkbox_id"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/> <!-- Puedes establecer si estará seleccionado por defecto -->
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewSele"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="@color/background_component"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMale">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNotaMitjana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notaBat"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text" />
+
+                <TextView
+                    android:id="@+id/tvHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="38sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.slider.RangeSlider
+                    android:id="@+id/rsHeight"
+                    android:contentDescription="@string/espec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stepSize="0.1"
+                    android:valueFrom="0"
+                    android:valueTo="10" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewWeight"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/background_component"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/viewAge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewHeight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/esp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:id="@+id/EditTextes1"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:hint="@string/hintET"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnEspLess1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/espec"
+                        android:src="@drawable/less"
+                        app:backgroundTint="@color/background_fab"
+                        app:tint="@color/white" />
+                    <TextView
+                        android:id="@+id/tvEsp1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="32sp"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        tools:text="0.1" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnEspPlus1"
+                        android:layout_width="0dp"
+                        android:contentDescription="@string/espec"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plus"
+                        android:layout_weight="1"
+                        app:backgroundTint="@color/background_fab"
+                        app:tint="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewAge"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="@color/background_component"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewWeight"
+            app:layout_constraintTop_toBottomOf="@+id/viewHeight">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/esp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/title_text" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:hint="@string/hintET"
+                    android:id="@+id/EditTextes2"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnEspLess2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/less"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/espec"
+                        app:backgroundTint="@color/background_fab"
+                        app:tint="@color/white" />
+                    <TextView
+                        android:id="@+id/tvEsp2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="32sp"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        tools:text="0.1" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btnEspPlus2"
+                        android:contentDescription="@string/espec"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plus"
+                        app:backgroundTint="@color/background_fab"
+                        app:tint="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_height="80dp"
+            android:textSize="18sp"
+            android:text="@string/calculate"
+            app:layout_constraintTop_toBottomOf="@id/viewAge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

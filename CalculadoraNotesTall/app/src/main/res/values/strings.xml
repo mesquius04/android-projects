@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Calculadora EVAU</string>
+
+    <string name="bat">Bachillerato</string>
+    <string name="cfg">CFGS</string>
+
+    <string name="notaBat">NOTA MEDIA DE BACHILLERATO</string>
+    <string name="notaCF">NOTA MEDIA DEL CFGS</string>
+    <string name="esp">Fase Específica</string>
+    <string name="notatext">Estas entre el mejor…</string>
+
+    <string name="calculate">Calcular</string>
+    <string name="espec">Indica la nota adequada</string>
+    <string name="recalculate">Re-Calcular</string>
+    <string name="result">Tu resultado</string>
+    <string name="hintET">0.0</string>
+    <string name="error">Error</string>
+    <string name="altrallengua">AÑADIR LENGUA COOFICIAL -></string>
+    <string name="fasegeneral">FASE GENERAL</string>
+    <string name="catala">-LENGUA COOFICIAL</string>
+    <string name="castellà">-CASTELLANO</string>
+    <string name="historia">-HISTORIA DE ESPAÑA</string>
+    <string name="llenguaex">-LENGUA EXTRANJERA</string>
+    <string name="optativa">-OPTATIVA</string>
+    <string name="title_peso_normal">Normal</string>
+
+    <string name="v2021">2021\n(media)</string>
+    <string name="v2022">2022\n(media)</string>
+    <string name="v2023">2023\n(media)</string>
+    <string name="vn2021">6,863</string>
+    <string name="vn2022">6,855</string>
+    <string name="vn2023">6,787</string>
+    <string name="tu">TÚ</string>
+    <string name="nota_baixa">Estas aprovado!</string>
+    <string name="nota_moltbaixa">Has suspendido! :(</string>
+    <string name="nota_mitjana">Cualificación alta!</string>
+    <string name="nota_alta">Cualificación muy alta!</string>
+    <string name="nota_moltalta">Cualificación brillante!!!</string>
+
+
+</resources>

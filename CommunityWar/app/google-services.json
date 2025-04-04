@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "872908207435",
+    "project_id": "community-wars",
+    "storage_bucket": "community-wars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872908207435:android:7dc91aaa8a14652db6e4ce",
+        "android_client_info": {
+          "package_name": "com.nihoi.communitywar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLo3a7Kx28p8aaykdImEVLWiluAMLWxRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

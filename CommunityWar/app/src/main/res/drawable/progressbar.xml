@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fondo de la ProgressBar -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/blacknotan" />
+            <corners android:radius="25dp"/>
+        </shape>
+    </item>
+
+    <!-- Progreso de la ProgressBar -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/marron_cuero"/>
+                <corners android:radius="25dp"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

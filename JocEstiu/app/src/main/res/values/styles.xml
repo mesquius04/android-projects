@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Otros atributos del estilo -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black</item> <!-- Establece el color de fondo del ActionBar como negro -->
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item> <!-- Establece el estilo del texto del título del ActionBar como negrita -->
+        <item name="android:textColor">@color/grey</item> <!-- Establece el color del texto del título del ActionBar como gris claro -->
+    </style>
+
+</resources>

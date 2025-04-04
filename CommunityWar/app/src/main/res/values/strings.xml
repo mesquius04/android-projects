@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Community War</string>
+    <string name="total">TOTAL</string>
+    <string name="castle1">INFERNUM</string>
+    <string name="castle2">HELADIA</string>
+    <string name="castle3">HERBACEA</string>
+    <string name="castle4">SOLARIS</string>
+
+</resources>

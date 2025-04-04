@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@color/fondoboto"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBacktoMain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/circle_background2"
+        android:padding="8dp"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toStartOf="@+id/perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/perfil"
+        app:tint="@color/cardview_dark_background" />
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_marginTop="4dp"
+        android:layout_width="150dp"
+        android:background="@drawable/fondo_clase"
+        android:layout_height="150dp"
+        android:padding="6dp"
+        android:src="@drawable/asessi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvClase"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Mesquius, el ASESINO NOVATO"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClase"
+        app:srcCompat="@color/cardview_dark_background" />
+
+    <TextView
+        android:id="@+id/tvTitulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CLASE ASESINO - TÍTULOS HONORIFICOS"
+        android:textColor="@color/blancnotan"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+    app:layout_constraintEnd_toEndOf="@+id/imageView15"
+    app:layout_constraintStart_toStartOf="@+id/imageView15"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitulos">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo1"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT1e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT1"
+                    app:layout_constraintStart_toStartOf="@+id/ivT1"
+                    app:layout_constraintTop_toTopOf="@+id/ivT1" />
+
+                <TextView
+                    android:id="@+id/tvT1e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT1"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:id="@+id/ivT2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo2"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT2e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT2"
+                    app:layout_constraintStart_toStartOf="@+id/ivT2"
+                    app:layout_constraintTop_toTopOf="@+id/ivT2" />
+
+                <TextView
+                    android:id="@+id/tvT2e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT2"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo3"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT3e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT3"
+                    app:layout_constraintStart_toStartOf="@+id/ivT3"
+                    app:layout_constraintTop_toTopOf="@+id/ivT3" />
+
+                <TextView
+                    android:id="@+id/tvT3e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT3"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo4"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT4e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT4"
+                    app:layout_constraintStart_toStartOf="@+id/ivT4"
+                    app:layout_constraintTop_toTopOf="@+id/ivT4" />
+
+                <TextView
+                    android:id="@+id/tvT4e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo5"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT5e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT5"
+                    app:layout_constraintStart_toStartOf="@+id/ivT5"
+                    app:layout_constraintTop_toTopOf="@+id/ivT5" />
+
+                <TextView
+                    android:id="@+id/tvT5e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT5"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT6"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo6"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT6e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT6"
+                    app:layout_constraintStart_toStartOf="@+id/ivT6"
+                    app:layout_constraintTop_toTopOf="@+id/ivT6" />
+
+                <TextView
+                    android:id="@+id/tvT6e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT6"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT7"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo7"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT7e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT7"
+                    app:layout_constraintStart_toStartOf="@+id/ivT7"
+                    app:layout_constraintTop_toTopOf="@+id/ivT7" />
+
+                <TextView
+                    android:id="@+id/tvT7e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT7"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT8"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo8"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT8e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT8"
+                    app:layout_constraintStart_toStartOf="@+id/ivT8"
+                    app:layout_constraintTop_toTopOf="@+id/ivT8" />
+
+                <TextView
+                    android:id="@+id/tvT8e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT8"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT9"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo9"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT9e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT9"
+                    app:layout_constraintStart_toStartOf="@+id/ivT9"
+                    app:layout_constraintTop_toTopOf="@+id/ivT9" />
+
+                <TextView
+                    android:id="@+id/tvT9e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT9"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT10"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo10"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT10e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT10"
+                    app:layout_constraintStart_toStartOf="@+id/ivT10"
+                    app:layout_constraintTop_toTopOf="@+id/ivT10" />
+
+                <TextView
+                    android:id="@+id/tvT10e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT10"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT11"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo11"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT11e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT11"
+                    app:layout_constraintStart_toStartOf="@+id/ivT11"
+                    app:layout_constraintTop_toTopOf="@+id/ivT11" />
+
+                <TextView
+                    android:id="@+id/tvT11e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT11"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT12"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo12"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT12e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT12"
+                    app:layout_constraintStart_toStartOf="@+id/ivT12"
+                    app:layout_constraintTop_toTopOf="@+id/ivT12" />
+
+                <TextView
+                    android:id="@+id/tvT12e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT12"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT13"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo13"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT13e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT13"
+                    app:layout_constraintStart_toStartOf="@+id/ivT13"
+                    app:layout_constraintTop_toTopOf="@+id/ivT13" />
+
+                <TextView
+                    android:id="@+id/tvT13e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT13"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT14"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo14"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT14e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT14"
+                    app:layout_constraintStart_toStartOf="@+id/ivT14"
+                    app:layout_constraintTop_toTopOf="@+id/ivT14" />
+
+                <TextView
+                    android:id="@+id/tvT14e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT14"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivT15"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lighttitle" />
+
+                <TextView
+                    android:id="@+id/tvT15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/asesinotitulo15"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tvT15e"
+                    app:layout_constraintEnd_toEndOf="@+id/ivT15"
+                    app:layout_constraintStart_toStartOf="@+id/ivT15"
+                    app:layout_constraintTop_toTopOf="@+id/ivT15" />
+
+                <TextView
+                    android:id="@+id/tvT15e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Se consigue al elejir la clase ASESINO."
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvT15"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

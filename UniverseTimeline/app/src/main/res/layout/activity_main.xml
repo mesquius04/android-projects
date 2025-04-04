@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="10"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView"
+                        app:layout_constraintStart_toStartOf="@id/imageView"
+                        app:layout_constraintEnd_toEndOf="@id/imageView"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView">
+                        <TextView
+                            android:id="@+id/textViewPequeno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="minuto 0"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/textViewBigBang"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="BIG BANG"
+                            android:textColor="@color/white"
+                            android:textSize="48dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Marca el inicio del espacio,\ndel tiempo y de\nla materia."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo2"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView2"
+                        app:layout_constraintStart_toStartOf="@id/imageView2"
+                        app:layout_constraintEnd_toEndOf="@id/imageView2"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView2">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="10dp"
+                            android:src="@drawable/bigbang"
+                            android:scaleType="fitCenter" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/fondo3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView3"
+                        app:layout_constraintStart_toStartOf="@id/imageView3"
+                        app:layout_constraintEnd_toEndOf="@id/imageView3"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView3">
+
+                        <TextView
+                            android:id="@+id/textViewPequeno2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="minuto 3"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewMateria"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="FORMACIÓN\nDE LA MATERIA"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:text="Se enfria la sopa de particulas\ncreando protones y\nneutrones."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|top"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView4"
+                        app:layout_constraintStart_toStartOf="@id/imageView4"
+                        app:layout_constraintEnd_toEndOf="@id/imageView4"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView4">
+
+                        <TextView
+                            android:id="@+id/textViewPequeno3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="año ≈300.000"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewAtomos"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="PRIMEROS\nÁTOMOS"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:text="Las particulas subatómicas\nse juntan formando\nátomos ligeros."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|top"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo2"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView5"
+                        app:layout_constraintStart_toStartOf="@id/imageView5"
+                        app:layout_constraintEnd_toEndOf="@id/imageView5"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView5">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"/>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="20dp"
+                            android:layout_marginTop="-100dp"
+                            android:src="@drawable/nucleo"
+                            android:scaleType="fitCenter" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView6"
+                        app:layout_constraintStart_toStartOf="@id/imageView6"
+                        app:layout_constraintEnd_toEndOf="@id/imageView6"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView6">
+
+                        <TextView
+                            android:id="@+id/textViewPequeno4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="año 100-200 M"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewEstrellas"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="FORMACIÓN\nDE ESTRELLAS"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:text="La gravedad junta\n el gas y el polvo para\n crear estrellas."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|top"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView7"
+                        app:layout_constraintStart_toStartOf="@id/imageView7"
+                        app:layout_constraintEnd_toEndOf="@id/imageView7"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView7">
+
+                        <TextView
+                            android:id="@+id/textViewPequeno5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="año 100-200 M"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewNeuro"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="NEUROSÍNTESIS\nESTELAR"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:text="Las reacciones nucleares en\nlas estrellas crean\notros elementos."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|top"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo2"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView8"
+                        app:layout_constraintStart_toStartOf="@id/imageView8"
+                        app:layout_constraintEnd_toEndOf="@id/imageView8"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView8">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginTop="-30dp"
+                            android:padding="10dp"
+                            android:src="@drawable/estrella1"
+                            android:scaleType="fitCenter" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="12dp"
+                            android:src="@drawable/estrella2"
+                            android:layout_marginTop="20dp"/>
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView9"
+                        app:layout_constraintStart_toStartOf="@id/imageView9"
+                        app:layout_constraintEnd_toEndOf="@id/imageView9"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView9">
+
+                        <TextView
+                            android:id="@+id/textViewPequeno6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="año ≈500 M"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewGalaxias"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="PRIMERAS\nGALAXIAS"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:text="La gravedad hace que\nlas estrellas orbiten\nformando galaxias."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|top"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/fondo2"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="5"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView10"
+                        app:layout_constraintStart_toStartOf="@id/imageView10"
+                        app:layout_constraintEnd_toEndOf="@id/imageView10"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView10">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"/>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:padding="8dp"
+                            android:src="@drawable/bhole"/>
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/fondo3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView11"
+                        app:layout_constraintStart_toStartOf="@id/imageView11"
+                        app:layout_constraintEnd_toEndOf="@id/imageView11"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView11">
+
+                        <TextView
+                            android:id="@+id/textViewPequeno7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="hace 4.600.000.000 años"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewSS"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="11"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="EL SISTEMA\nSOLAR"
+                            android:textColor="@color/white"
+                            android:textSize="32sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:text="Se forma el Sistema Solar\na partir de una gran\nnube de polvo"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="center_horizontal|top"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MainActivity">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/fondo4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:weightSum="22"
+                        app:layout_constraintDimensionRatio="H,16:16"
+                        app:layout_constraintTop_toTopOf="@id/imageView12"
+                        app:layout_constraintStart_toStartOf="@id/imageView12"
+                        app:layout_constraintEnd_toEndOf="@id/imageView12"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView12">
+
+
+
+                        <TextView
+                            android:padding="12dp"
+                            android:id="@+id/textViewTierra"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="13"
+                            android:gravity="center_horizontal|bottom"
+                            android:text="LA TIERRA"
+                            android:textColor="@color/white"
+                            android:textSize="48sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <!-- TextView secundario (texto pequeño) superpuesto al principal -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:text="La Tierra se forma unos años\n después de la formación del\n sistema solar y empieza\n a orbitar al Sol."
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:gravity="top|center_horizontal"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/textViewPequeno8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="hace 4.700.000.000 años"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!-- Otros elementos pueden ir aquí con sus respectivos weights y configuraciones -->
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1D0AD"
+    tools:context=".ActivityLog">
+
+
+    <ImageView
+        android:id="@+id/imageView20R"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondoreg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <TextView
+        android:id="@+id/textView31R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textColor="#320002"
+        android:letterSpacing="0.05"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline31R" />
+
+    <ImageView
+        android:id="@+id/ivLogR"
+        android:layout_width="160dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline32R"
+        app:srcCompat="@drawable/btnlog" />
+
+    <TextView
+        android:id="@+id/textView32R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR"
+        android:textColor="#F1D0AD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLogR"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogR"
+        app:layout_constraintStart_toStartOf="@+id/ivLogR"
+        app:layout_constraintTop_toTopOf="@+id/ivLogR" />
+
+    <EditText
+        android:id="@+id/etUsernameR"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="hormigita bonita"
+        android:textAlignment="center"
+        android:textColor="@color/blacknotan"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline33R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPasswordR"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/blacknotan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline33R" />
+
+    <EditText
+        android:id="@+id/etPassword2R"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginTop="18dp"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/blacknotan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordR" />
+
+    <EditText
+        android:id="@+id/etEmailR"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="email"
+        android:layout_marginTop="26dp"
+        android:textAlignment="center"
+        android:textColor="@color/blacknotan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword2R" />
+
+    <TextView
+        android:id="@+id/textView33R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.4"
+        android:text="NIHOI"
+        android:textAlignment="center"
+        android:textColor="@color/marron_cuero"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbLoR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:buttonTint="#7F2511"
+        android:checked="true"
+        android:letterSpacing="0.03"
+        android:text="Guardar usuario"
+        android:textAlignment="center"
+        android:textColor="#320002"
+        android:textSize="16sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="@+id/ivLogR"
+        app:layout_constraintStart_toStartOf="@+id/ivLogR"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogR" />
+</androidx.constraintlayout.widget.ConstraintLayout>

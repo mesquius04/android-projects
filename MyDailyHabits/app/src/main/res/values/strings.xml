@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Journey To Man</string>
+    <string name="age">EDAD</string>
+    <string name="erudito">CLASE ERUDITO</string>
+    <string name="guerrerom">CLASE GUERRERO</string>
+    <string name="asesinom">CLASE ASESINO</string>
+    <string name="negociosm">HOMBRE DE NEGOCIOS</string>
+    <string name="negociosf">MUJER DE NEGOCIOS</string>
+    <string name="user">NOMBRE DE USUARIO</string>
+
+    <string name="asesinotitulo1">ASESINO NOVATO</string>
+    <string name="asesinotitulo2">ASESINO INICIADO</string>
+    <string name="asesinotitulo3">ASESINO PRINCIPIANTE</string>
+    <string name="asesinotitulo4">APRENDIZ DEL SIGILO</string>
+    <string name="asesinotitulo5">VERDUGO EMERGENTE</string>
+    <string name="asesinotitulo6">DISCÍPULO DE LAS SOMBRAS</string>
+    <string name="asesinotitulo7">ASESINO EN ASCENSO</string>
+    <string name="asesinotitulo8">JOVEN SEÑOR ASESINO</string>
+    <string name="asesinotitulo9">HERALDO DEL CAOS</string>
+    <string name="asesinotitulo10">GRAN ASESINO</string>
+    <string name="asesinotitulo11">SEÑOR DE LAS ARTES OSCURAS</string>
+    <string name="asesinotitulo12">REY ASESINO</string>
+    <string name="asesinotitulo13">DEMONIO DESPIADADO</string>
+    <string name="asesinotitulo14">GRAN SEÑOR DEL CAOS</string>
+    <string name="asesinotitulo15">MAESTRO DE LAS SOMBRAS</string>
+
+</resources>

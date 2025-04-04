@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imatgeinicial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/fire_themed_castles_9"
+        android:clickable="true"
+        android:contentDescription="fondo"
+        android:focusable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+    <TextView
+        android:id="@+id/textinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:padding="20dp"
+        android:rotationX="12"
+        android:shadowColor="#FFFFFF"
+        android:text="DRAGON CONQUEROR"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Imatge de fondo"
+        android:gravity="center_vertical|center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/prova"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Imatge de fondo"
+        android:gravity="center_vertical|center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/fondo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_vertical">
+
+            <TextView
+                android:id="@+id/tvVariable2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:contentDescription="Score"
+                android:gravity="left"
+                android:text="AutoSpeed= "
+                android:textColor="#FFFF"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvVariable3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="14dp"
+                android:contentDescription=" "
+                android:gravity="left"
+                android:text="5"
+                android:textColor="#FFFF"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@+id/imagebuttonbuff5"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="53dp"
+                android:background="@drawable/boss_dragon_emperor"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </ImageButton>
+            <TextView
+                android:id="@+id/tvVariable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:contentDescription="Score"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="#FFFF"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/coin"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="26dp"
+                android:contentDescription="Score"
+                android:gravity="left"
+                android:background="@drawable/crystal2"
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageButton
+                android:id="@+id/imagebuttonbuff"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/egypt_crocodile"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imagebuttonbuff2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/corrupted_void_fire_wolf"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imagebuttonbuff3"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/dragon_king_blue"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imagebuttonbuff4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="182dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/boss_dragon_huanglong"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </ImageButton>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="151dp"
+                android:layout_height="118dp"
+                android:layout_marginEnd="108dp"
+                android:layout_marginBottom="68dp"
+                android:visibility="gone"
+                android:src="@drawable/necklace_31"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints">
+
+            </ImageView>
+
+            <ImageButton
+                android:id="@+id/imagebutton"
+                android:layout_width="211dp"
+                android:layout_height="186dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="152dp"
+                android:background="@drawable/dragon_eggs_81"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imagebutton2"
+                android:layout_width="287dp"
+                android:layout_height="298dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="136dp"
+                android:background="@drawable/boss_earth_dragon"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imagebutton2c"
+                android:layout_width="287dp"
+                android:layout_height="298dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="136dp"
+                android:background="@drawable/boss_earth_dragon2"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imagebutton3"
+                android:layout_width="370dp"
+                android:layout_height="345dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="112dp"
+                android:background="@drawable/dragon_dark_king"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imagebutton4"
+                android:layout_width="370dp"
+                android:layout_height="345dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="112dp"
+                android:background="@drawable/dragon_triple_head_darkness"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imagebutton5"
+                android:layout_width="403dp"
+                android:layout_height="363dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="128dp"
+                android:background="@drawable/special_spiders_dragon_spider"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/imagebuttonshop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/banco"
+                android:clickable="true"
+                android:contentDescription="Boton central"
+                android:focusable="true"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            </ImageButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

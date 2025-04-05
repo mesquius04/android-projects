@@ -43,7 +43,27 @@ class ActivityLog : AppCompatActivity() {
     }
     fun initListeners(){
         ivlog.setOnClickListener{
-            correct(etUsername.text.toString(),etPassword.text.toString())
+            //correct(etUsername.text.toString(),etPassword.text.toString()) //Should be this, removed to test without API key
+
+            // Remove this if valid API Key
+            val playerPreferences = PlayerPreferences(this)
+
+            // Si no hay un jugador guardado en las preferencias, creamos uno "default"
+            if (playerPreferences.getPlayerModel() == null) {
+                val defaultPlayer = PlayersModel(
+                    playerName = "Guest",  // Nombre por defecto
+                    password = "",         // Contraseña vacía
+                    lvl = 3,               // Nivel inicial
+                    exp = 8,               // Exp por defecto
+                    castleName = "Heladia"        // Nombre de castillo vacío
+                )
+                playerPreferences.savePlayerModel(defaultPlayer)
+            }
+
+            // Lanzamos la siguiente actividad
+            val intent = Intent(this, ActivityMain::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
         }
     }
     fun correct(username: String, password: String){
